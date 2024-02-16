@@ -14,14 +14,16 @@ function ajustarTamanio() {
 }
 
 const verFactura = document.getElementById('verFactura');
-const secOne = document.getElementById('sec1');
-const secTwo = document.getElementById('sec2');
+const sec11 = document.getElementById('sec1');
+const sec21 = document.getElementById('sec2');
+const mostrarExit = document.getElementById('exit');
 
 verFactura.addEventListener('click', (e) => {
     e.preventDefault();
     extraerInformacion();
-    secOne.style = 'display: none';
-    secTwo.style = 'display: flex';
+    sec11.style = 'display: none';
+    sec21.style = 'display: flex';
+    mostrarExit.style = 'display: flex';
 });
 
 function extraerInformacion() {
@@ -70,11 +72,12 @@ function mostrarFechaCostaRica() {
 }
 
 const exit = document.getElementById('exit');
-const sec1 = document.getElementById('sec1');
-const sec2 = document.getElementById('sec2');
+const sec12 = document.getElementById('sec1');
+const sec22 = document.getElementById('sec2');
 
 exit.addEventListener('click', (e) => {
     e.preventDefault();
-    sec2.style = 'display: none';
-    sec1.style = 'display: flex';
+    sec22.style = 'display: none';
+    exit.style = 'display: none';
+    sec12.style = 'display: flex';
 });
