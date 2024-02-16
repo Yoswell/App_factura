@@ -14,11 +14,14 @@ function ajustarTamanio() {
 }
 
 const verFactura = document.getElementById('verFactura');
+const secOne = document.getElementById('sec1');
+const secTwo = document.getElementById('sec2');
+
 verFactura.addEventListener('click', (e) => {
     e.preventDefault();
     extraerInformacion();
-    sec1.style = 'display: none';
-    sec2.style = 'display: flex';
+    secOne.style = 'display: none';
+    secTwo.style = 'display: flex';
 });
 
 function extraerInformacion() {
