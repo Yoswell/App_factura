@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas de Suricata</title>
+</head>
+
+<body id="body">
+    <button class="float3" id="exit">
+        <svg id="svg" class="arrowArriba" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+    </button>
+    <header>
+        <nav>
+            <img class="logoBn2" src="logoBn.png">
+            <h4 class="h4">Factura electronica</h4>
+        </nav>
+    </header>
+    <section id="sec1" class="factura-content">
+        <div class="factura-div" id="factura-div">
+            <div class="content-input">
+                <input class="datos-factura" id="input-nombre" placeholder="Nombre de la persona">
+                <input class="datos-factura" id="input-texto" placeholder="Texto">
+            </div>
+            <div class="content-button">
+                <button id="verFactura" class="btn-generar-factura">Generar factura</button>
+            </div>
+        </div>
+    </section>
+    <section id="sec2" class="factura-content2">
+        <div class="factura-div">
+            <div class="table" id="table">
+                <div class="a">
+                    <h4 class="info">Fecha:&nbsp</h4>
+                    <h4 class="info2" id="fechaH4"></h4>
+                </div>
+                <div class="a">
+                    <h4 class="info">Numero de referencia:&nbsp</h4>
+                    <input class="contenido" id="numeroReferencia" value="">
+                </div>
+                <div class="a">
+                    <h4 class="info">Cuenta a debitar:&nbsp</h4>
+                    <h4 class="info2 none-padding">CR<h5>**********************</h5></h4>
+                </div>
+                <div class="a">
+                    <h4 class="info">Nombre del titular:&nbsp</h4>
+                    <input class="contenido" id="input-ingresar-nombre" value="">
+                </div>
+                <div class="a">
+                    <h4 class="info">Monto a debitar:&nbsp</h4>
+                    <h4 class="info2" id="amount-debit"></h4>
+                </div>
+
+                <div class="a">
+                    <h4>&nbsp
+                        <h4></h4>
+                    </h4>
+                </div>
+
+                <div class="a">
+                    <h4 class="info">Cuenta a acreditar:&nbsp</h4>
+                    <h4 class="info2 none-padding">CR<h5>**********************</h5></h4>
+                </div>
+                <div class="a">
+                    <h4 class="info">Nombre del titular:&nbsp</h4>
+                    <input class="contenido" id="input-ingresar-nombre2" value="">
+                </div>
+                <div class="a">
+                    <h4 class="info">Numero de telefono:&nbsp</h4>
+                    <h4 class="info2" id="telefono"></h4>
+                </div>
+                <div class="a">
+                    <h4 class="info">Monto a creditar:&nbsp</h4>
+                    <h4 class="info2" id="amount-credit"></h4>
+                </div>
+
+
+                <div class="a end">
+                    <h4>&nbsp
+                        <h4></h4>
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
