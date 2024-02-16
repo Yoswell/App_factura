@@ -11,7 +11,7 @@
     height: 50px;
     position: absolute;
     left: 50;
-    bottom: 18px;
+    bottom: 17px;
     border-radius: 100px 100px 0 0;
     background-color: #9faa22;
     border: none;
@@ -166,11 +166,11 @@ section {
 }
 
 #sec1 {
-    display: none;
+    display: flex;
 }
 
 #sec2 {
-    display: flex;
+    display: none;
 }
 
 .factura-content2 {
